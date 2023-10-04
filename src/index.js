@@ -20,7 +20,7 @@ mongoose
   .connect(connectionString)
   .then(() => console.log("Database connection established"))
   .catch((err) =>
-    console.log("Unable to establish database connection" + " " + err)
+    console.log("Unable to establish database connection" + "-" + err)
   );
 
 app.listen(port, () => console.log(`Server listening on ${hostname}`));
